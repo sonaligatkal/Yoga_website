@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+   padding: 0;
+   font-family:  sans-serif;
+   
+
+}
+body{
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #f1f1f1;
+
+
+}
+
+.about-section{
+background: url(https://cache.careers360.mobi/media/presets/720X480/colleges/social-media/media-gallery/4082/2020/11/7/Campus%20View%20of%20KK%20Wagh%20Institute%20of%20Engineering%20Education%20and%20Research_Campus-View.jpg) no-repeat center;
+background-size: cover;
+background-color: #fff;
+overflow: hidden;
+padding: 100px 0;
+}
+
+.inner-container{
+ width: 30%;
+float: right;
+background-color: #fff;
+padding: 100px;
+}
+
+.inner-container h1{
+  margin-bottom: 50px;
+font-size: 30px;
+font-weight: 900;
+
+}
+.text{
+
+    font-size: 13px;
+    color: rgb(63, 58, 58);
+   line-height: 20px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+

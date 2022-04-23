@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleu.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your course videos</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="pexels-antoni-shkraba-4708382.jpg" width="100%">
+                    <img src="play.png" class="play-btn"  onclick="playVideo('vid1.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="pexels-gustavo-fring-4127296.jpg"width="150" height="90" >
+                        <img src="play.png" class="play-btn" onclick="playVideo('vid2.mp4')" >
+                    </div>
+                    <p>Let's have fun with yoga!! </p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="oksana-taran-xB4ExGcUai0-unsplash.jpg"width="150" height="150"  >
+                        <img src="play.png" class="play-btn" onclick="playVideo('vid3.mp4')">
+                    </div>
+                    <p>Let's have fun with yoga!!</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="pexels-antoni-shkraba-4708392.jpg"width="150" height="40"  >
+                        <img src="play.png" class="play-btn" onclick="playVideo('vid4.mp4')">
+                    </div>
+                    <p>Let's have fun with yoga!!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay muted id="myVideo">
+            <source src="vid1.mp4" type="video/mp4">
+        </video>
+        <img src="close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay muted id="myVideo">
+            <source src="vid2.mp4" type="video/mp4">
+        </video>
+        <img src="close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay muted id="myVideo">
+            <source src="vid3.mp4" type="video/mp4">
+        </video>
+        <img src="close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay muted id="myVideo">
+            <source src="vid4.mp4" type="video/mp4">
+        </video>
+        <img src="close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+    <script>
+        var videoPlayer = document.getElementById("videoPlayer");
+        var myVideo = document.getElementById("myVideo");
+
+        function stopVideo(){
+            videoPlayer.style.display = "none";
+        }
+        function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block";
+        }
+
+    </script>
+</body>
+</html>
